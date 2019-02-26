@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FlowControlActivity">
+
+    <TextView
+        android:id="@+id/control_result_tv"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:gravity="center"
+        android:hint="结果展示区"/>
+
+    <Button
+        android:id="@+id/control_add_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="递增5==>10"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/control_result_tv"
+        />
+
+    <Button
+        android:id="@+id/control_less_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="递增10==>5"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/control_add_btn"
+        />
+
+    <Button
+        android:id="@+id/control_more_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="大于等于或小于等于"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/control_less_btn"
+        />
+
+    <Button
+        android:id="@+id/control_step_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="步数"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/control_more_btn"
+        />
+
+    <Button
+        android:id="@+id/control_string_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="遍历字符串"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/control_step_btn"
+        />
+
+    <Button
+        android:id="@+id/control_array_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="遍历数组"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/control_string_btn"
+        />
+
+    <Button
+        android:id="@+id/control_when_in_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:text="7 是否在[1,3,5,7,9]中"
+        app:layout_constraintLeft_toRightOf="@+id/control_add_btn"
+        app:layout_constraintTop_toBottomOf="@+id/control_result_tv"/>
+
+    <Button
+        android:id="@+id/control_when_is_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="8dp"
+        android:text="hello 是否是string类型"
+        app:layout_constraintLeft_toRightOf="@+id/control_less_btn"
+        app:layout_constraintTop_toBottomOf="@+id/control_when_in_btn"/>
+
+</android.support.constraint.ConstraintLayout>
