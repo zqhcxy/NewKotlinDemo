@@ -179,6 +179,14 @@ class FlowControlActivity : AppCompatActivity(), View.OnClickListener {
         }
     }
 
+    fun nullMode(){
+        var array= arrayOf(1,null,2,null,3,null,4)
+
+        for(index in array){
+            index?.let { "index==> $index " }
+        }
+    }
+
 
     override fun onClick(v: View?) {
         when (v?.id) {
