@@ -89,5 +89,8 @@ class StringActivity : AppCompatActivity(), View.OnClickListener {
         mShowTextview.text=showText
     }
 
+    fun replaceString(){
+
+    }
 
 }
