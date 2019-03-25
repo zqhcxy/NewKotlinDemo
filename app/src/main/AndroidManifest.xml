@@ -16,8 +16,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".FlowControlActivity"></activity>
-        <activity android:name=".StringActivity"></activity>
+        <activity android:name=".FlowControlActivity" />
+        <activity android:name=".StringActivity" />
+        <activity android:name=".ClassAndModeActivity" />
+        <activity android:name=".InterfaceClassActivity"></activity>
     </application>
 
 </manifest>
